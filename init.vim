@@ -8,10 +8,11 @@ call vundle#rc(s:editor_root . '/bundle')
 set background=dark
 let g:colorscheme='breezy'
 
+let s:cwd=getcwd()
+exec 'cd '.s:editor_root
 source pre_plugins.vim
 source plugins.vim
 source post_plugins.vim
-
 source constants.vim
 source functions.vim
 source autocomplete.vim
@@ -29,6 +30,7 @@ source systemd.vim
 source term.vim
 source theme.vim
 source title.vim
+exec 'cd '.s:cwd
 
 
 filetype plugin indent on
