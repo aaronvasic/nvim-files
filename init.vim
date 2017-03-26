@@ -1,43 +1,36 @@
 let s:editor_root=expand("~/.config/nvim")
-let &rtp = &rtp . ',' . s:editor_root . '/bundle/Vundle.vim/'
+let &rtp = &rtp . ',' . s:editor_root . '/bundle/Vundle.vim'
 set nocompatible
 call vundle#rc(s:editor_root . '/bundle')
 
-Plugin 'scrooloose/syntastic'
-Plugin 'ntpeters/vim-better-whitespace'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'dynamotn/csv.vim'
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'bling/vim-bufferline'
-Plugin 'tpope/vim-commentary'
-Plugin 'vim-scripts/vim-gnupg'
-Plugin 'vim-scripts/Hoogle'
-Plugin 'jpalardy/vim-slime'
-Plugin 'tmux-plugins/vim-tmux'
-Plugin 'ervandew/supertab'
-Plugin 'majutsushi/tagbar'
-Plugin 'vim-airline/vim-airline'
-Plugin 'bitc/vim-hdevtools'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'sunaku/vim-ruby-minitest'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vinegar'
+" TODO: fix netrw permission changing bug
 
-set expandtab
-set tabstop=4
-set shiftwidth=4
+set background=dark
+let g:colorscheme='breezy'
 
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-endif
+source pre_plugins.vim
+source plugins.vim
+source post_plugins.vim
 
-set undodir=~/.config/nvim/undo/
-set undofile
+source constants.vim
+source functions.vim
+source autocomplete.vim
+source backups.vim
+source commands.vim
+source debugging.vim
+source keybindings.vim
+source netrw.vim
+source nvim.vim
+source options.vim
+source persist_session.vim
+source programming.vim
+source restorecursor.vim
+source systemd.vim
+source term.vim
+source theme.vim
+source title.vim
 
-set ruler
 
-set scrolloff=10
+filetype plugin indent on
 
-autocmd BufEnter * let &titlestring = ' ' . expand("%:t")
-set title
-
+" vim: foldmethod=marker foldlevel=0
