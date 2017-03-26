@@ -126,3 +126,7 @@ map <Leader>gC :GitCommit
 map <Leader>gs :GitStatus
 map <Leader>gS :GitShow
 map <Leader>gd :GitDiff
+
+
+" plugins
+map <Leader>pa yy:e ~/.config/nvim/plugins.vimGp
