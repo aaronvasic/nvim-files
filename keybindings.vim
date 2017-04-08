@@ -56,6 +56,9 @@ map zX <Nop>
 map zF <Nop>
 map zf <Nop>
 
+
+map z<Space> :noh
+
 noremap <Leader>F zf
 map <Leader>f :SetFoldLevel
 
@@ -123,6 +126,9 @@ map <Leader>hS <Plug>GitGutterRevertHunk
 map <Leader>hr <Plug>GitGutterRevertHunk
 map <Leader>hp <Plug>GitGutterPreviewHunk
 map <Leader>gC :GitCommit
+map <Leader>gP :GitPush
+map <Leader>gp :GitPull
+map <Leader>gc :GitCheckout
 map <Leader>gs :GitStatus
 map <Leader>gS :GitShow
 map <Leader>gd :GitDiff
@@ -130,3 +136,9 @@ map <Leader>gd :GitDiff
 
 " plugins
 map <Leader>pa yy:e ~/.config/nvim/plugins.vimGp
+
+
+" deoplete tab-complete
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+" tern
+autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>

@@ -14,6 +14,9 @@ command -count=0 SetFoldLevel call SetFoldLevel()
 "endif
 
 command GitCommit call GitCommit()
+command GitPush call GitPush()
+command GitPull call GitPull()
+command GitCheckout call GitCheckout()
 command GitDiff call GitDiff()
 command GitShow call GitShow()
 command GitStatus call GitStatus()

@@ -93,6 +93,15 @@ endfunction        "}}}3
 function GitCommit() "{{{3
         exec GitCmd('commit')
 endfunction " }}}3
+function GitPush() "{{{3
+        exec GitCmd('push')
+endfunction " }}}3
+function GitPull() "{{{3
+        exec GitCmd('pull')
+endfunction " }}}3
+function GitCheckout() "{{{3
+        exec GitCmd('checkout')
+endfunction " }}}3
 function GitShow() "{{{3
         exec GitCmd('show')
 endfunction " }}}3
