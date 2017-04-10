@@ -177,7 +177,32 @@ function RunFile(type) " {{{3
         end
         call setpos('.',s:s)
 endfunction "}}}3
-"}}}2 }}}1
+function InteractiveRunFile(type)
+        let s:s=getpos('.')
+        let s:l=line('.')
+        let s:basic_cases={}
+        let s:fd=fnamemodify(tempname(),':p:h')
+        let s:fn=s:fd . '/' . expand("%:t")
+        silent! exec ":write! " . s:fn
+        let s:basic_cases["ruby"] = ["env","irb","-r",s:fn]
+        let s:matched = 0
+        let s:fname=tempname()
+        for s:ft in keys(s:basic_cases)
+                if a:type == s:ft
+                        let s:matched = 1
+                        new
+                        call termopen(s:basic_cases[s:ft])
+                        startinsert
+                        break
+                endif
+        endfor
+        if s:matched == 1
+                return
+        else
+                echo "This file has no execution application associated."
+        end
+        call setpos('.',s:s)
+endfunction
 function RestoreCursor()
     if line("'\"") > 1 && line("'\"") <= line("$")
         exe 'normal! g`"'

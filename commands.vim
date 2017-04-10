@@ -22,6 +22,7 @@ command GitShow call GitShow()
 command GitStatus call GitStatus()
 
 command RunFile call RunFile(&ft)
+command InteractiveRunFile call InteractiveRunFile(&ft)
 command FontInc call IncFontSize()
 command FontDec call DecFontSize()
 " }}}1

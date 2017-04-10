@@ -12,6 +12,7 @@ map <M-Down> :FontDec
 map <F11> :ToggleBare
 " execute buffer in bash
 map <F5> :RunFile
+map <F6> :InteractiveRunFile
 " In-line math
 " TODO:
 " - convert to function and grab/replace text more intelligently
