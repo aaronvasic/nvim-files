@@ -1,0 +1,93 @@
+[submodule "bundle/breezy"]
+path = bundle/breezy
+url = https://github.com/fneu/breezy.git
+[submodule "bundle/bufexplorer"]
+path = bundle/bufexplorer
+url = https://github.com/jlanzarotta/bufexplorer.git
+[submodule "bundle/csv.vim"]
+path = bundle/csv.vim
+url = https://github.com/chrisbra/csv.vim.git
+[submodule "bundle/delimitMate"]
+path = bundle/delimitMate
+url = https://github.com/Raimondi/delimitMate.git
+[submodule "bundle/deoplete.nvim"]
+path = bundle/deoplete.nvim
+url = https://github.com/Shougo/deoplete.nvim.git
+[submodule "bundle/gnupg.vim"]
+path = bundle/gnupg.vim
+url = https://github.com/vim-scripts/gnupg.vim.git
+[submodule "bundle/php.vim"]
+path = bundle/php.vim
+url = https://github.com/vim-scripts/php.vim.git
+[submodule "bundle/smarty.vim"]
+path = bundle/smarty.vim
+url = https://github.com/blueyed/smarty.vim.git
+[submodule "bundle/Solarized"]
+path = bundle/Solarized
+url = https://github.com/vim-scripts/Solarized.git
+[submodule "bundle/supertab"]
+path = bundle/supertab
+url = https://github.com/ervandew/supertab.git
+[submodule "bundle/syntastic"]
+path = bundle/syntastic
+url = https://github.com/vim-syntastic/syntastic.git
+[submodule "bundle/tagbar"]
+path = bundle/tagbar
+url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/tern_for_vim"]
+path = bundle/tern_for_vim
+url = https://github.com/ternjs/tern_for_vim.git
+[submodule "bundle/tmuxline.vim"]
+path = bundle/tmuxline.vim
+url = https://github.com/edkolev/tmuxline.vim.git
+[submodule "bundle/vdebug"]
+path = bundle/vdebug
+url = https://github.com/joonty/vdebug.git
+[submodule "bundle/vim-airline"]
+path = bundle/vim-airline
+url = https://github.com/vim-airline/vim-airline.git
+[submodule "bundle/vim-better-whitespace"]
+path = bundle/vim-better-whitespace
+url = https://github.com/ntpeters/vim-better-whitespace.git
+[submodule "bundle/vim-bufferline"]
+path = bundle/vim-bufferline
+url = https://github.com/bling/vim-bufferline.git
+[submodule "bundle/vim-colors-solarized"]
+path = bundle/vim-colors-solarized
+url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/vim-commentary"]
+path = bundle/vim-commentary
+url = https://github.com/tpope/vim-commentary.git
+[submodule "bundle/vim-gitgutter"]
+path = bundle/vim-gitgutter
+url = https://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/vim-hdevtools"]
+path = bundle/vim-hdevtools
+url = https://github.com/bitc/vim-hdevtools.git
+[submodule "bundle/vim-multiple-cursors"]
+path = bundle/vim-multiple-cursors
+url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "bundle/vim-phpcs"]
+path = bundle/vim-phpcs
+url = https://github.com/bpearson/vim-phpcs.git
+[submodule "bundle/vim-phpqa"]
+path = bundle/vim-phpqa
+url = https://github.com/joonty/vim-phpqa.git
+[submodule "bundle/vim-ruby-minitest"]
+path = bundle/vim-ruby-minitest
+url = https://github.com/sunaku/vim-ruby-minitest.git
+[submodule "bundle/vim-slime"]
+path = bundle/vim-slime
+url = https://github.com/jpalardy/vim-slime.git
+[submodule "bundle/vim-surround"]
+path = bundle/vim-surround
+url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-tmux"]
+path = bundle/vim-tmux
+url = https://github.com/tmux-plugins/vim-tmux.git
+[submodule "bundle/vim-vinegar"]
+path = bundle/vim-vinegar
+url = https://github.com/tpope/vim-vinegar.git
+[submodule "bundle/Vundle.vim"]
+path = bundle/Vundle.vim
+url = https://github.com/VundleVim/Vundle.vim
