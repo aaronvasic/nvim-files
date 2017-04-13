@@ -5,7 +5,7 @@ call vundle#rc(s:editor_root . '/bundle')
 
 " TODO: fix netrw permission changing bug
 
-set background=dark
+set background=light
 let g:colorscheme='solarized'
 
 let s:cwd=getcwd()
