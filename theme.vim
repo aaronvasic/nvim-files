@@ -18,11 +18,10 @@ if &t_Co > 2 || has("gui_running")
                                         set t_Co=16
                                         let g:solarized_termcolors=16 " only set this to 256 if the terminal supports 256 colors but isn't using the solarized palette
                                 endif
-                                let s:background='dark'
+                                let s:background=&background
                         else
-                                let s:background='dark'
+                                let s:background=&background
                         endif
-                        let &background=s:background
                         " ALSO: this must be done before colorscheme solarized
                         let g:solarized_contrast="normal"   "default value is normal
                         let g:solarized_visibility="normal"        "default value is normal
